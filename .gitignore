@@ -1,0 +1,7 @@
+node_modules
+design
+dist
+instructions.md
+style-guide.md
+.DS_Store
+.env
