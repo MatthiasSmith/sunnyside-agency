@@ -39,9 +39,19 @@
           class="nav__mobile-nav-btn"
           type="button"
           title="toggle mobile nav menu"
+          onclick='toggleMobileNav()'
         >
           <img src="../public/images/icon-hamburger.svg" alt="" />
         </button>
+      </nav>
+      <nav class="mobile-nav mobile-nav--hide" id="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-list__item"><a href="#">About</a></li>
+          <li class="mobile-nav-list__item"><a href="#">Services</a></li>
+          <li class="mobile-nav-list__item"><a href="#">Projects</a></li>
+          <li class="mobile-nav-list__item mobile-nav-list__item--btn">
+            <a href="#">Contact</a>
+          </li>
       </nav>
     </header>
     <main>
@@ -342,4 +352,16 @@
       </div>
     </footer>
   </body>
+  <script>
+    const toggleMobileNav = (event) => {
+      const el = document.getElementById('mobile-nav');
+      if (el.classList.contains('mobile-nav--show')) {
+        el.classList.remove('mobile-nav--show');
+        el.classList.add('mobile-nav--hide');
+      } else {
+        el.classList.remove('mobile-nav--hide');
+        el.classList.add('mobile-nav--show');
+      }
+    };
+  </script>
 </html>
