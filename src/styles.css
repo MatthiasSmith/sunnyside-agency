@@ -393,6 +393,11 @@ body {
   font-size: 1.125rem;
   font-weight: var(--barlow-weight);
   text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+.footer-nav__list-item a:hover {
+  color: white;
 }
 
 .social-links-list {
@@ -406,6 +411,14 @@ body {
   margin-left: 1.25rem;
 }
 
+.social-links-list__item a > svg path {
+  transition: fill 0.2s ease-out;
+}
+
+.social-links-list__item a:hover > svg path {
+  fill: white;
+}
+
 .attribution {
   background: var(--cyan-bg);
   color: var(--cyan-footer-text);
@@ -413,6 +426,7 @@ body {
   text-align: center;
   padding: 4rem 0 1rem;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
