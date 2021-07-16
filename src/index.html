@@ -22,7 +22,7 @@
     <header class="header">
       <nav class="nav">
         <a class="nav__logo" href="#"
-          ><img src="../public/images/logo.svg" width="124px" alt=""
+          ><img class="nav__logo-img" src="../public/images/logo.svg" alt="Navigate home"
         /></a>
         <ul class="nav-list">
           <li class="nav-list__item"><a href="#">About</a></li>
@@ -53,13 +53,13 @@
           <picture class="hero__image">
             <source
               srcset="../public/images/mobile/image-header.jpg"
-              media="(max-width: 475px)"
+              media="(max-width: 479px)"
             />
             <img src="../public/images/desktop/image-header.jpg" alt="" />
           </picture>
         </div>
       </section>
-      <section class="attribute">
+      <section class="attribute attribute--lg-switch-sides">
         <div class="attribute__image-container">
           <picture class="attribute__image">
             <source
@@ -70,15 +70,17 @@
           </picture>
         </div>
         <div class="attribute__text-container">
-          <h2 class="attribute__heading">Transform your brand</h2>
-          <p class="attribute__text">
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
-          </p>
-          <a class="attribute__link attribute__link--yellow" href="#"
-            >Learn more</a
-          >
+          <div class="attribute__text-inner-container">
+            <h2 class="attribute__heading">Transform your brand</h2>
+            <p class="attribute__text">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a class="attribute__link attribute__link--yellow" href="#"
+              >Learn more</a
+            >
+          </div>
         </div>
       </section>
 
@@ -93,30 +95,32 @@
           </picture>
         </div>
         <div class="attribute__text-container">
-          <h2 class="attribute__heading">Stand out to the right audience</h2>
-          <p class="attribute__text">
-            Using a collaborative formula of designers, researchers,
-            photographers, videographers, and copywriters, we’ll build and
-            extend your brand in digital places.
-          </p>
-          <a class="attribute__link attribute__link--red" href="#"
-            >Learn more</a
-          >
+          <div class="attribute__text-inner-container">
+            <h2 class="attribute__heading">Stand out to the right audience</h2>
+            <p class="attribute__text">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a class="attribute__link attribute__link--red" href="#"
+              >Learn more</a
+            >
+          </div>
         </div>
       </section>
-      <section class="attribute attribute--two-sided">
-        <div class="attribute__side-container">
-          <div class="attribute__text-container attribute__text-container--sm">
-            <h2 class="attribute__heading attribute__heading--cyan">
+      <section class="offers">
+        <div class="offers__col">
+          <div class="offers__text-container">
+            <h2 class="offers__heading offers__heading--cyan">
               Graphic design
             </h2>
-            <p class="attribute__text attribute__text--cyan">
+            <p class="offers__text offers__text--cyan">
               Great design makes you memorable. We deliver artwork that
               underscores your brand message and captures potential clients’
               attention.
             </p>
           </div>
-          <picture class="attribute__image--bg">
+          <picture class="offers__image--bg">
             <source
               srcset="../public/images/mobile/image-graphic-design.jpg"
               media="(max-width: 767px)"
@@ -127,17 +131,17 @@
             />
           </picture>
         </div>
-        <div class="attribute__side-container">
-          <div class="attribute__text-container attribute__text-container--sm">
-            <h2 class="attribute__heading attribute__heading--blue">
+        <div class="offers__col">
+          <div class="offers__text-container">
+            <h2 class="offers__heading offers__heading--blue">
               Photography
             </h2>
-            <p class="attribute__text attribute__text--blue">
+            <p class="offers__text offers__text--blue">
               Increase your credibility by getting the most stunning,
               high-quality photos that improve your business image.
             </p>
           </div>
-          <picture class="attribute__image--bg">
+          <picture class="offers__image--bg">
             <source
               srcset="../public/images/mobile/image-photography.jpg"
               media="(max-width: 767px)"
