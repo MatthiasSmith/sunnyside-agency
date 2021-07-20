@@ -14,7 +14,7 @@ const BrandAttribute = ({ imageSrcSet, title, text, isRed, isReversed }) => {
           isReversed ? 'sm:order-1' : 'sm:order-2'
         }`}
       >
-        <div className='text-center md:text-left max-w-xs mx-auto sm:flex sm:flex-col sm:justify-center sm:items-start sm:h-full md:max-w-md'>
+        <div className='text-center md:text-left max-w-xs mx-auto sm:flex sm:flex-col sm:justify-center sm:items-center md:items-start sm:h-full lg:max-w-md'>
           <h2 className='font-serif text-3xl text-blue4 font-extrabold'>
             {title}
           </h2>
