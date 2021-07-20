@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Header from '../components/header';
+import Header from '../components/header/header';
 import Hero from '../components/hero';
 import BrandAttribute from '../components/brand-attribute';
 import Offers from '../components/offers';
