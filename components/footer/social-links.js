@@ -3,7 +3,7 @@ import React from 'react';
 const SocialLinks = () => {
   return (
     <ul className='social-links-list flex justify-center mt-20'>
-      <li className='social-links-list__item'>
+      <li>
         <a href='#'>
           <svg
             role='image'
@@ -20,7 +20,7 @@ const SocialLinks = () => {
           </svg>
         </a>
       </li>
-      <li className='social-links-list__item ml-6'>
+      <li className='ml-6'>
         <a href='#'>
           <svg
             role='image'
@@ -37,7 +37,7 @@ const SocialLinks = () => {
           </svg>
         </a>
       </li>
-      <li className='social-links-list__item ml-6'>
+      <li className='ml-6'>
         <a href='#'>
           <svg
             role='image'
@@ -54,7 +54,7 @@ const SocialLinks = () => {
           </svg>
         </a>
       </li>
-      <li className='social-links-list__item ml-6'>
+      <li className='ml-6'>
         <a href='#'>
           <svg
             role='image'
@@ -71,6 +71,15 @@ const SocialLinks = () => {
           </svg>
         </a>
       </li>
+      <style jsx>{`
+        .social-links-list li a svg path {
+          transition: fill 0.2s ease-out;
+        }
+
+        .social-links-list li a:hover svg path {
+          fill: white;
+        }
+      `}</style>
     </ul>
   );
 };

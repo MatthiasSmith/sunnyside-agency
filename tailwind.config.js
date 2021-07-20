@@ -27,9 +27,10 @@ module.exports = {
       }),
       fontSize: {
         h1: ['2.5rem', '3.25rem'],
+        h1Lg: ['2.625rem', '3.5rem'],
       },
       letterSpacing: {
-        '1/4-em': '0.25em',
+        '1/4-rem': '0.25rem',
       },
       maxWidth: (theme) => ({
         22: '22rem',

@@ -5,7 +5,7 @@ const Attribution = () => {
     <div className='attribution max-w-xs mx-auto font-serif text-xs text-cyanFooterText text-center mt-20'>
       Challenge by{' '}
       <a
-        className='text-blueText font-sans'
+        className='font-sans text-blueText hover:underline'
         href='https://www.frontendmentor.io?ref=challenge'
         target='_blank'
       >
@@ -13,7 +13,7 @@ const Attribution = () => {
       </a>
       . Coded by{' '}
       <a
-        className='text-blueText font-sans'
+        className='font-sans text-blueText hover:underline'
         href='https://portfolio-matthiassmith.vercel.app'
       >
         Matthias Smith

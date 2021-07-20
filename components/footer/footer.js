@@ -5,7 +5,7 @@ import SocialLinks from './social-links';
 
 const Footer = () => {
   return (
-    <footer className='footer bg-cyanBg pt-16 pb-6'>
+    <footer className='footer bg-cyanBg pt-16 md:pt-18 pb-6'>
       <div className='footer__logo-container'>
         <svg
           className='w-41 mx-auto'

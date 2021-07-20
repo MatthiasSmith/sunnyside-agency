@@ -9,10 +9,10 @@ const Testimonial = ({ avatarSrc, name, title, quote }) => {
           src={avatarSrc}
           alt={`Portrait of ${name}`}
         />
-        <p className='max-w-sm mx-auto text-blue3 text-lg mt-6 flex-auto'>
+        <p className='max-w-sm mx-auto text-blue3 text-lg mt-6 md:mt-14 flex-auto'>
           {quote}
         </p>
-        <span className='mt-6 block font-serif text-lg'>{name}</span>
+        <span className='mt-6 md:mt-16 block font-serif text-lg'>{name}</span>
         <span className='mt-2 block text-sm text-blue1'>{title}</span>
       </article>
     </li>
@@ -21,8 +21,8 @@ const Testimonial = ({ avatarSrc, name, title, quote }) => {
 
 const Testimonials = () => {
   return (
-    <section className='py-16 md:py-24 px-6'>
-      <h2 className='text-center font-serif text-blue1 uppercase tracking-1/4-em font-bold'>
+    <section className='py-16 md:py-40 px-6'>
+      <h2 className='text-center font-serif text-blue1 uppercase tracking-1/4-rem font-bold md:text-lg'>
         Client testimonials
       </h2>
       <ul className='md:flex md:justify-center'>
