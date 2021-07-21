@@ -11,7 +11,7 @@ const Offer = ({ title, text, imageSrcSet, classes }) => {
         <h2 className='text-3xl font-serif'>{title}</h2>
         <p className='mt-8 md:mt-3 lg:mt-8'>{text}</p>
       </div>
-      <ResponsiveImage imageSrcSet={imageSrcSet} />
+      <ResponsiveImage imageSrcSet={imageSrcSet} loading='lazy' />
     </>
   );
 };

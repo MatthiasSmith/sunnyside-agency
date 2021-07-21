@@ -46,10 +46,10 @@ const Gallery = () => {
   return (
     <section className='grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-1'>
       <h2 className='sr-only'>Image Gallery</h2>
-      <ResponsiveImage imageSrcSet={images.milkBottles} />
-      <ResponsiveImage imageSrcSet={images.orange} />
-      <ResponsiveImage imageSrcSet={images.cone} />
-      <ResponsiveImage imageSrcSet={images.sugarCubes} />
+      <ResponsiveImage imageSrcSet={images.milkBottles} loading='lazy' />
+      <ResponsiveImage imageSrcSet={images.orange} loading='lazy' />
+      <ResponsiveImage imageSrcSet={images.cone} loading='lazy' />
+      <ResponsiveImage imageSrcSet={images.sugarCubes} loading='lazy' />
     </section>
   );
 };

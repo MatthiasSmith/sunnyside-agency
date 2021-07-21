@@ -8,6 +8,7 @@ const Testimonial = ({ avatarSrc, name, title, quote }) => {
           className='rounded-full w-18 mx-auto'
           src={avatarSrc}
           alt={`Portrait of ${name}`}
+          loading='lazy'
         />
         <p className='max-w-sm mx-auto text-blue3 text-lg mt-6 md:mt-14 flex-auto'>
           {quote}
