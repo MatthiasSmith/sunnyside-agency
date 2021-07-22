@@ -21,6 +21,15 @@ module.exports = {
       white: '#fff',
     },
     extend: {
+      animation: {
+        'fade-slide-down': 'fadeSlideDown 750ms ease-out',
+      },
+      keyframes: {
+        fadeSlideDown: {
+          '0%': { opacity: 0, transform: 'translateY(-2rem)' },
+          '100%': { opacity: 1, transform: 'translateY(0rem)' },
+        },
+      },
       backgroundImage: (theme) => ({
         hero: "url('/images/mobile/image-header.jpg')",
         'hero-lg': "url('/images/desktop/image-header.jpg')",

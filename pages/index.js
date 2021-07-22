@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Controller, Scene } from 'react-scrollmagic';
 
 import Header from '../components/header/header';
 import Hero from '../components/hero';
@@ -16,41 +17,49 @@ export default function Home() {
         <link rel='icon' href='/images/favicon-32x32.png' />
       </Head>
       <Header />
-      <main>
-        <Hero />
-        <BrandAttribute
-          imageSrcSet={[
-            {
-              mediaQuery: '(max-width: 639px)',
-              src: '/images/mobile/image-transform.jpg',
-            },
-            { src: '/images/desktop/image-transform.jpg', alt: '' },
-          ]}
-          title='Transform your brand'
-          text='We are a full-service creative agency specializing in helping
+      <Controller>
+        <main className='max-w-full overflow-hidden'>
+          <Hero />
+          <BrandAttribute
+            imageSrcSet={[
+              {
+                mediaQuery: '(max-width: 639px)',
+                src: '/images/mobile/image-transform.jpg',
+              },
+              { src: '/images/desktop/image-transform.jpg', alt: '' },
+            ]}
+            title='Transform your brand'
+            text='We are a full-service creative agency specializing in helping
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.'
-          isReversed={true}
-        />
-        <BrandAttribute
-          imageSrcSet={[
-            {
-              mediaQuery: '(max-width: 639px)',
-              src: '/images/mobile/image-stand-out.jpg',
-            },
-            { src: '/images/desktop/image-stand-out.jpg', alt: '' },
-          ]}
-          title='Stand out to the right audience'
-          text='Using a collaborative formula of designers, researchers,
+            isReversed={true}
+          />
+          <BrandAttribute
+            imageSrcSet={[
+              {
+                mediaQuery: '(max-width: 639px)',
+                src: '/images/mobile/image-stand-out.jpg',
+              },
+              { src: '/images/desktop/image-stand-out.jpg', alt: '' },
+            ]}
+            title='Stand out to the right audience'
+            text='Using a collaborative formula of designers, researchers,
           photographers, videographers, and copywriters, we’ll build and
           extend your brand in digital places.'
-          isRed={true}
-        />
-        <Offers />
-        <Testimonials />
-        <Gallery />
-      </main>
+            isRed={true}
+          />
+          <Offers />
+          <Testimonials />
+          <Gallery />
+        </main>
+      </Controller>
       <Footer />
+      <style global jsx>{`
+        body {
+          max-width: 100vw;
+          overflow-x: hidden;
+        }
+      `}</style>
     </>
   );
 }
