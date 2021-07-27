@@ -6,7 +6,7 @@ const SocialLinks = () => {
       <li>
         <a href='#'>
           <svg
-            role='image'
+            role='img'
             aria-label='Link to Facebook'
             width='20'
             height='20'
@@ -23,7 +23,7 @@ const SocialLinks = () => {
       <li className='ml-6'>
         <a href='#'>
           <svg
-            role='image'
+            role='img'
             aria-label='Link to Instagram'
             width='20'
             height='20'
@@ -40,7 +40,7 @@ const SocialLinks = () => {
       <li className='ml-6'>
         <a href='#'>
           <svg
-            role='image'
+            role='img'
             aria-label='Link to Twitter'
             width='20'
             height='17'
@@ -57,7 +57,7 @@ const SocialLinks = () => {
       <li className='ml-6'>
         <a href='#'>
           <svg
-            role='image'
+            role='img'
             aria-label='Link to Pinterest'
             width='20'
             height='20'

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className='footer__logo-container'>
         <svg
           className='w-41 mx-auto'
-          role='image'
+          role='img'
           aria-label='Sunnyside Logo'
           viewBox='0 0 124 24'
           xmlns='http://www.w3.org/2000/svg'
