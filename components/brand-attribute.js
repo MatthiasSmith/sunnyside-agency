@@ -29,7 +29,7 @@ const BrandAttribute = ({ imageSrcSet, title, text, isRed, isReversed }) => {
               {text}
             </p>
             <a
-              className={`link-underline inline-block relative font-serif uppercase text-blue4 mt-6 ${
+              className={`link-underline inline-block relative font-serif uppercase text-blue4 mt-6 focus:outline-dashed-blue ${
                 isRed ? 'red' : 'yellow'
               }-underline`}
               href='#'

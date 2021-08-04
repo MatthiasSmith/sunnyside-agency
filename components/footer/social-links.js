@@ -4,7 +4,7 @@ const SocialLinks = () => {
   return (
     <ul className='social-links-list flex justify-center mt-20'>
       <li>
-        <a href='#'>
+        <a href='#' className='outline-none'>
           <svg
             role='img'
             aria-label='Link to Facebook'
@@ -21,7 +21,7 @@ const SocialLinks = () => {
         </a>
       </li>
       <li className='ml-6'>
-        <a href='#'>
+        <a href='#' className='outline-none'>
           <svg
             role='img'
             aria-label='Link to Instagram'
@@ -38,7 +38,7 @@ const SocialLinks = () => {
         </a>
       </li>
       <li className='ml-6'>
-        <a href='#'>
+        <a href='#' className='outline-none'>
           <svg
             role='img'
             aria-label='Link to Twitter'
@@ -55,7 +55,7 @@ const SocialLinks = () => {
         </a>
       </li>
       <li className='ml-6'>
-        <a href='#'>
+        <a href='#' className='outline-none'>
           <svg
             role='img'
             aria-label='Link to Pinterest'
@@ -76,8 +76,14 @@ const SocialLinks = () => {
           transition: fill 0.2s ease-out;
         }
 
-        .social-links-list li a:hover svg path {
+        .social-links-list li a:hover svg path,
+        .social-links-list li a:focus svg path {
           fill: white;
+        }
+
+        .social-links-list li:focus-within {
+          outline: 2px dashed hsl(167, 40%, 24%);
+          outline-offset: 0.2rem;
         }
       `}</style>
     </ul>

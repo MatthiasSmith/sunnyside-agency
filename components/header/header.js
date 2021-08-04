@@ -13,12 +13,12 @@ const Header = () => {
   return (
     <header className='py-8 px-6 relative bg-blueBg z-10'>
       <nav className='flex justify-between items-center'>
-        <a href='#'>
+        <a href='#' className='focus:outline-dashed-white'>
           <img src='/images/logo.svg' alt='Navigate home' />
         </a>
         <NavList />
         <button
-          className='md:hidden'
+          className='md:hidden focus:outline-dashed-white'
           type='button'
           title='Toggle mobile nav menu'
           onClick={toggleMobileNav}
@@ -27,6 +27,11 @@ const Header = () => {
         </button>
       </nav>
       <MobileNav isOpen={isMobileNavOpen} />
+      <style jsx>{`
+        a:focus {
+          outline: 2px dashed white;
+        }
+      `}</style>
     </header>
   );
 };

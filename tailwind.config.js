@@ -44,6 +44,11 @@ module.exports = {
       maxWidth: (theme) => ({
         22: '22rem',
       }),
+      outline: {
+        'dashed-white': ['2px dashed white', '0.2rem'],
+        'dashed-blue': ['2px dashed hsl(212, 27%, 19%)', '0.2rem'],
+        'dashed-cyan': ['2px dashed hsl(167, 40%, 24%)', '0.2rem'],
+      },
       spacing: {
         18: '4.5rem',
         41: '10.75rem',

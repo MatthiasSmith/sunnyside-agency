@@ -10,18 +10,24 @@ const MobileNav = ({ isOpen }) => {
         >
           <ul className='text-center text-blue2 text-lg py-8'>
             <li>
-              <a href='#'>About</a>
+              <a href='#' className='focus:outline-dashed-blue'>
+                About
+              </a>
             </li>
             <li className='mt-6'>
-              <a href='#'>Services</a>
+              <a href='#' className='focus:outline-dashed-blue'>
+                Services
+              </a>
             </li>
             <li className='mt-6'>
-              <a href='#'>Projects</a>
+              <a href='#' className='focus:outline-dashed-blue'>
+                Projects
+              </a>
             </li>
             <li className='mt-8 mb-4'>
               <a
                 href='#'
-                className='bg-brightYellow text-blue4 py-4 px-7 uppercase font-serif text-sm rounded-full'
+                className='bg-brightYellow text-blue4 py-4 px-7 uppercase font-serif text-sm rounded-full focus:outline-dashed-blue'
               >
                 Contact
               </a>
